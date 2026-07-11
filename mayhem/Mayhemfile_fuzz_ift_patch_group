@@ -1,0 +1,8 @@
+project: fontations
+target: fuzz_ift_patch_group
+cmds:
+  - cmd: /mayhem/fuzz_ift_patch_group
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_ift_patch_group/testsuite

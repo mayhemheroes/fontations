@@ -1,0 +1,8 @@
+project: fontations
+target: fuzz_sparse_bit_set_decode
+cmds:
+  - cmd: /mayhem/fuzz_sparse_bit_set_decode
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_sparse_bit_set_decode/testsuite

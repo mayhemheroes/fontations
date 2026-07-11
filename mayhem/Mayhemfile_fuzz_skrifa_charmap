@@ -1,0 +1,8 @@
+project: fontations
+target: fuzz_skrifa_charmap
+cmds:
+  - cmd: /mayhem/fuzz_skrifa_charmap
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_skrifa_charmap/testsuite
